@@ -1,6 +1,6 @@
 
 {
-    "key": {key},
-    "secret": {secret}
+    "key": 'key',
+    "secret": 'secret'
 }
 
