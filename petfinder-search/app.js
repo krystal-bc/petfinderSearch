@@ -48,13 +48,8 @@ const _getMatches = (name, animals) => {
 //prompt the user to select a pet from the list of matching results
 const _pickPet = async matches => {
 
-    //beautify the display of the search results
+    //simplify the search results
     const displayMatches = matches.map(animal => {
-        if (animal.description == null) {
-            animal.description = 'None'
-        } else if (animal.description.indexOf('\n') != -1) {
-            animal.description = animal.description.substring(0, animal.description.indexOf('\n') - 1)
-        }
         return ({ name: `${animal.name}\n\tspecies: ${animal.type}\tgender:${animal.gender}`, value: animal.id })
     })
 
@@ -64,7 +59,6 @@ const _pickPet = async matches => {
         pageSize: matches.length,
         name: 'selection',
         message: 'select pet to get details:\n',
-        // display the beautified matches
         choices: displayMatches,
         //return the id of the selected pet
         validate: () => {
