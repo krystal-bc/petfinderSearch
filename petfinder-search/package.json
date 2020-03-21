@@ -1,0 +1,16 @@
+{
+  "name": "petfinder-search",
+  "version": "1.0.0",
+  "description": "app for searching for pets by name in the Petfinder API database, where thousands of animals waiting to get adopted are listed",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Krystal Bernal",
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^7.1.0",
+    "petfinder": "file:../petfinder",
+    "yargs": "^15.3.1"
+  }
+}

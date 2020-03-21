@@ -1,0 +1,14 @@
+{
+  "name": "petfinder",
+  "version": "1.0.0",
+  "description": "module for the Petfinder API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Krystal Bernal",
+  "license": "ISC",
+  "dependencies": {
+    "@petfinder/petfinder-js": "^1.0.6"
+  }
+}
