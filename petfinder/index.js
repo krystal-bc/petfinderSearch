@@ -19,8 +19,6 @@ async function getAnimals() {
 
 async function getPetById(id) {
     try {
-        //the maximum number of pets that can be returned per page is 100
-        //use{page: #} to specify which page of results to return
         const response = await client.animal.show(id)
         return response.data.animal
     }
@@ -31,8 +29,6 @@ async function getPetById(id) {
 
 async function getOrganization(id) {
     try {
-        //the maximum number of pets that can be returned per page is 100
-        //use{page: #} to specify which page of results to return
         const response = await client.organization.show(id)
         return response.data.organization
     }
