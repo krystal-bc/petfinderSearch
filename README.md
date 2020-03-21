@@ -13,10 +13,8 @@ How to Use the Card App CLI and Custom Module Dependencies
 
 5. In the petfinder-search folder:
 
-To view the help directions for the CLI run: node cli.js --help.
+To view the help directions for the CLI run:    node cli.js --help.
 
-To run the petfinder-search CLI:
-    // run the search command
-    node cli.js search {query}
+To run the petfinder-search CLI:     node cli.js search {query}
     
 Browse through the search results using the up and down arrow keys and select the highlighted option using the Enter key. Once you hit Enter, you will get a more detailed description of the selected pet, including of the organization where they are located.
